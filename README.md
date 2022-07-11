@@ -1,5 +1,5 @@
 Create a simple website using HTML5, CSS3 & JavaScript
-I'm using AWS to deploy this simple website
+I'm trying use AWS to deploy this simple website
 
 
 ***Deploy AWS***
@@ -95,7 +95,15 @@ I'm using AWS to deploy this simple website
 23. "cd Web-Dasar"
 24. install dependencies web server node.js "npm install"
 25. "npm run start"
+###
 
+
+#OR
+1. Navigate S3
+2. click create bucket
+3. bucket name "myyy-bucket"
+4. for region, choose "app-southeast-1"
+5. 
 
 ###
 
