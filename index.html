@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nalendra Various Technology</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/img/NVTinc.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://kit.fontawesome.com/b54a99a12e.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'NVT Zeus', 'NVT Athena', 'NVT Poseidon'],
+          ['2022', 500, 400, 250],
+          ['2023', 743, 415, 325],
+          ['2024', 890, 618, 503],
+          ['2025', 1465, 1012, 994]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'NVT Zeus, NVT Athena, and NVT Poseidon: 2022-2025',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+</head>
+<body>
+	<!----hero Section start---->
+<header>
+		<nav>
+			<div class="logo">
+				<h2>NVT<span>Inc.</span></a></h2>
+			</div>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#product">Product</a></li>
+				<li><a href="#market">Market</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+	
+<main>
+	<!--Home-->
+	<div class="home">
+		<div class="content">
+			<h1>Your Next <span>Technology</span></h1>
+			<p><span>Start your journey with us!</span></p>
+			
+			<button type="button" onclick="alert('We are here for you! Come with us!!')"><span></span> More!</button>
+			<button type="button" onclick="alert('Coming Soon!')"><span></span> Order Now!</button>
+		</div>
+	</div>
+
+	<!----Intro start---->
+
+	<article id="introduction">
+		<div class="main">
+			<img src="img/NVTinc.png">
+			<div class="introduction-text">
+				<article>
+					<h2>Introduction</h2>
+				<h5>Fast <span>& Scalable</span></h5>
+				<p><em>Nalendra Various Technology</em> a.k.a NVT Inc. is a company engaged in the semiconductor industry sector that focuses on making chipsets for your smartphone and personal computer (PC) which was founded in 2022 by Mr.Calvyn Chandra Satria</p>
+				<button type="button" onclick="window.location.href='mailto:c2200g1862@bangkit.academy';">Let's Talk</button>
+				</article>
+			</div>
+		</div>
+	</article>
+
+	<!-----Product----------->
+
+	<article id="product">
+		<div class="title">
+			<h2>Our Product</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fa-solid fa-desktop"></i>
+				<h5>NVT Zeus</h5>
+				<div class="pra">
+					<p>The world's first 1 nm fabricated chipset, with optimization technology that is more stable than previous technologies and with much more efficient power optimization. Let's adventure together!</p>
+
+					<p style="text-align: center;">
+						<a class="button" onclick="alert('Coming Soon!')">Specifications</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa-solid fa-mobile-screen"></i>
+				<h5>NVT Athena</h5>
+				<div class="pra">
+					<p>With 3 nm fabrication technology followed by 10 cores of 3.4 Ghz and can accommodate up to 21 GB of RAM ready to accompany your adventurous day. Let's order now and feel the sensation!</p>
+
+					<p style="text-align: center;">
+						<a class="button" onclick="alert('Coming Soon!')">Specifications</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa-solid fa-laptop"></i>
+				<h5>NVT Poseidon</h5>
+				<div class="pra">
+					<p>Do you crave a portable computer that does not reduce the performance side. Now we are releasing NVT Poseidon, a portable computer that has the power of a computer but with lighter dimensions.</p>
+
+					<p style="text-align: center;">
+						<a class="button" onclick="alert('Coming Soon!')">Specifications</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!------Market------>
+	<article id="market">
+		<p>Our Market</p>
+		<div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+		<a class="button-two" onclick="alert('Coming Soon!')">More Detail</a>
+	</article>
+
+
+<!--Contact-->
+	<aside>
+		<article id="contact">
+			<div class="main">
+				<img src="img/Calvyn.png">
+				<div class="contact-text">
+					<article>
+						<h2>Contact US</h2>
+					<h5>Calvyn Chandra Satria</h5>
+					<h6>c2200g1862@bangkit.academy</h6>
+					<p><b>Calvyn Chandra Satria</b>is an undergraduate student majoring in physics at the Diponegoro University with an interest in geophysics. Currently Calvyn is participating in the MSIB Dicoding activity with a concentration on Cloud Computing.</p>
+					
+					<div class="social">
+						<a href="https://web.facebook.com/calvyn.satria.12/" target="blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="mailto:c2200g1862@bangkit.academy?" target="blank"><ion-icon name="mail-outline"></ion-icon></a>
+						<a href="https://www.linkedin.com/in/calvyn-chandra-satria-35b5401a7/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+					</div>
+
+					<button type="button" onclick="window.location.href='mailto:c2200g1862@bangkit.academy';">Send me a message</button>
+					</article>
+				</div>
+			</div>
+		</article>
+	</aside>
+</main>
+
+	<!------footer start--------->
+	<footer>
+		<p class="end">CopyRight By Calvyn Chandra Satria</p>
+	</footer>
+</body>
+</html>

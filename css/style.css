@@ -1,0 +1,391 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+header{
+	background-color: #000;
+	display: flex;
+
+}
+.home{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/Business.jpeg);
+	background-size: cover;
+	background-position: center;
+	margin: auto;
+	opacity: 1;
+	align-items: center;
+	display: flex;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 0;
+	height: 50px;
+	float: right;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 50%;
+	justify-content: space-between;
+}
+.logo{
+	color: rgb(250, 243, 243);
+	font-size: 25px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	width: 120px;
+	cursor: pointer;
+}
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 8px  10px;
+	margin: 0 20px;
+	position: relative;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	display: block;
+	font-size: 0.9em;
+	padding: 10px;
+}
+nav ul li a:hover{
+	color: #ee0410;
+	transition: 0.4s;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(15, 14, 14);
+
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+
+.content .p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #b1294b;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+button span{
+    background: #86b43b;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+#introduction{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+#introduction img{
+	height: auto;
+	width: 430px;
+}
+.introduction-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.introduction-text h2{
+	color: rgb(248, 240, 240);
+	letter-spacing: 2px;
+	font-size: 35px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.introduction-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.introduction-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+#product{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 380px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 14px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+#market{
+	width: 100%;
+	height: 590px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+#market p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+#market .button-two{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+#market .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+aside #contact{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #101010;
+}
+aside #contact img{
+	height: auto;
+	width: 430px;
+}
+.contact-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.contact-text h2{
+	color: rgb(248, 240, 240);
+	letter-spacing: 2px;
+	font-size: 35px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.contact-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.contact-text h6{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 13px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.contact-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background: #191919;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
