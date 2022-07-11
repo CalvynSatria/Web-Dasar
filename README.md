@@ -2,7 +2,7 @@ Create a simple website using HTML5, CSS3 & JavaScript
 I'm trying use AWS to deploy this simple website
 
 
-***Deploy AWS***
+***Setting AWS***
 
 ### VPC Setting
 1. Log-in to AWS
