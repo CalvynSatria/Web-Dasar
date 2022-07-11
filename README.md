@@ -1,7 +1,5 @@
-Calvyn is a final year student majoring in physics at Diponegoro University.
-He has strengthened his skills in the field of geophysics and cloud computing by studying the literature, self-study 
-and field experience as a geophysical helper and infrastructure engineer in some project. 
-He has interest in geophysics exploration, IT infrastructure engineering and web development.
+Create a simple website using HTML5, CSS3 & JavaScript
+To deploy this simple website, i'm using Google Cloud Platform
 
 <!---
 CalvynSatria/CalvynSatria is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
