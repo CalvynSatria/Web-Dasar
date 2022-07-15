@@ -81,31 +81,74 @@ I'm trying use AWS to deploy this simple website
 9. on subnet, choose "my-subnet-1"
 10. on "Auto-assign Public IP" choose "enable"
 11. for security group (still on network setting), click "create security group"
-12. fill "Security group name" with "web-server-sg"
+12. fill "Security group name" with "web-server-nginx-sg"
 13. on "description" fill with "Allow SSH"
 14. then click "launch instance"
 15. on "instance", check the instance then click "connect"
 16. AWS CLI will appear
-17. write command " git clone https://github.com/CalvynSatria/Web-Dasar.git"
-18. "cd Web-Dasar"
+17. write command "git clone https://github.com/dicodingacademy/a387-jarkom-labs.git"
+18. "cd a387-jarkom-labs/"
 19. install node.js with nvm tools "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash" 
 20. "exit"
 21. connect again with the same instance
 22. "nvm install v14.15.4"
-23. "cd Web-Dasar"
+23. "cd a387-jarkom-labs/"
 24. install dependencies web server node.js "npm install"
 25. "npm run start"
 ###
 
 
-#OR
-1. Navigate S3
-2. click create bucket
-3. bucket name "myyy-bucket"
-4. for region, choose "app-southeast-1"
-5. 
+#Edit Inbound Rules
+1. Click instance
+2. go to security tab
+3. edit inbound rules
+4. add rules
+5. choose "Custom TCP" and fill "8000" on port range
+6. choose "Anywhere-IPv4" in source
+7. save rules
+8. back to instance, connect, "cd a387-jarkom-labs/" then "npm run start"
+9. run with "ip public:8000"
 
-###
+#Install NGINX
+1. "sudo apt update"
+2. "sudo apt-get install nginx -y"
+3. "sudo systemctl status nginx" to chek nginx status
+4. go to "security groups"
+5. check the web-server-nginx-sg, then click edit inbound rules
+6. add rules "http" , "anywhere-IPv4" and "https" , "anywhere-IPv4"
+7. connect to instance 
+8. "cat /etc/nginx/sites-available/default"
+9. "sudo nano /etc/nginx/sites-available/default"
+      proxy_pass http://localhost:8000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+    
+10. delet "# First attempt to serve request as file, then
+# as directory, then fall back to displaying a 404.
+try_files $uri $uri/ =404;"
+
+11.Ctrl X +Y+enter
+12. "sudo systemctl restart nginx"
+13. "cd a387-jarkom-labs/"
+14. "npm run start"
+
+
+#Limit access (prevent DDOS)
+1. "sudo nano /etc/nginx/sites-available/default"
+{2. "limit_req_zone $binary_remote_addr zone=one:10m rate=30r/m;" before server
+3. "limit_req zone=one;" on location
+4. ctrl x + y + enter
+5. "sudo systemctl restart nginx"} ----> Fail
+6. "a387-jarkom-labs/"
+7. " sudo nano app.js"
+8. change "Hello world!" to Calvyn Chandra Satria
+
+
+
+
 
 
 
